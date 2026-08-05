@@ -16,23 +16,23 @@
         <thead>
           <tr>
             <td colspan="2" rowspan="2"></td>
-            <th id="clothes" colspan="3">Clothes</th>
-            <th id="accessories" colspan="2">Accessories</th>
+            <th id="clothes" colspan="3" scope="colgroup">Clothes</th>
+            <th id="accessories" colspan="2" scope="colgroup">Accessories</th>
           </tr>
 
           <tr>
-            <th id="trousers" headers="clothes">Trousers</th>
-            <th id="shirts" headers="clothes">Skirts</th>
-            <th id="dresses" headers="clothes">Dresses</th>
-            <th id="bracelets" headers="accessories">Bracelets</th>
-            <th id="rings" headers="accessories">Rings</th>
+            <th id="trousers" headers="clothes" scope="col">Trousers</th>
+            <th id="shirts" headers="clothes" scope="col">Skirts</th>
+            <th id="dresses" headers="clothes" scope="col">Dresses</th>
+            <th id="bracelets" headers="accessories" scope="col">Bracelets</th>
+            <th id="rings" headers="accessories" scope="col">Rings</th>
           </tr>
         </thead>
 
         <tbody>
           <tr>
-            <th id="belgium" rowspan="3">Belgium</th>
-            <th id="antwerp">Antwerp</th>
+            <th id="belgium" rowspan="3" scope="rowgroup">Belgium</th>
+            <th id="antwerp" scope="row">Antwerp</th>
             <td headers="belgium antwerp clothes trousers">56</td>
             <td headers="belgium antwerp clothes skirts">22</td>
             <td headers="belgium antwerp clothes dresses">43</td>
@@ -41,7 +41,7 @@
           </tr>
 
           <tr>
-            <th id="ghent" headers="">Ghent</th>
+            <th id="ghent" headers="" scope="row">Ghent</th>
             <td headers="belgium ghent clothes trousers">46</td>
             <td headers="belgium ghent clothes skirts">18</td>
             <td headers="belgium ghent clothes dresses">50</td>
@@ -50,7 +50,7 @@
           </tr>
 
           <tr>
-            <th id="brussels" headers="">Brussels</th>
+            <th id="brussels" headers="" scope="row">Brussels</th>
             <td headers="belgium brussels clothes trousers">51</td>
             <td headers="belgium brussels clothes skirts">27</td>
             <td headers="belgium brussels clothes dresses">38</td>
@@ -59,8 +59,8 @@
           </tr>
 
           <tr>
-            <th id="netherlands" headers="" rowspan="2">The Netherlands</th>
-            <th id="amsterdam" headers="">Amsterdam</th>
+            <th id="netherlands" headers="" rowspan="2" scope="rowgroup">The Netherlands</th>
+            <th id="amsterdam" headers="" scope="row">Amsterdam</th>
             <td headers="netherlands amsterdam clothes trousers">89</td>
             <td headers="netherlands amsterdam clothes skirts">34</td>
             <td headers="netherlands amsterdam clothes dresses">69</td>
@@ -69,7 +69,7 @@
           </tr>
 
           <tr>
-            <th id="utrecht" headers="">Utrecht</th>
+            <th id="utrecht" headers="" scope="row">Utrecht</th>
             <td headers="netherlands utrecht clothes trousers">80</td>
             <td headers="netherlands utrecht clothes skirts">12</td>
             <td headers="netherlands utrecht clothes dresses">43</td>
