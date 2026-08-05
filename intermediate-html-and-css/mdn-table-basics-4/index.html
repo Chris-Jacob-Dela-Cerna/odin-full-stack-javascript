@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Items sold summary</title>
-    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
@@ -16,65 +16,65 @@
         <thead>
           <tr>
             <td colspan="2" rowspan="2"></td>
-            <th colspan="3">Clothes</th>
-            <th colspan="2">Accessories</th>
+            <th id="clothes" colspan="3">Clothes</th>
+            <th id="accessories" colspan="2">Accessories</th>
           </tr>
 
           <tr>
-            <th>Trousers</th>
-            <th>Skirts</th>
-            <th>Dresses</th>
-            <th>Bracelets</th>
-            <th>Rings</th>
+            <th id="trousers" headers="clothes">Trousers</th>
+            <th id="shirts" headers="clothes">Skirts</th>
+            <th id="dresses" headers="clothes">Dresses</th>
+            <th id="bracelets" headers="accessories">Bracelets</th>
+            <th id="rings" headers="accessories">Rings</th>
           </tr>
         </thead>
 
         <tbody>
           <tr>
-            <th rowspan="3">Belgium</th>
-            <th>Antwerp</th>
-            <td>56</td>
-            <td>22</td>
-            <td>43</td>
-            <td>72</td>
-            <td>23</td>
+            <th id="belgium" rowspan="3">Belgium</th>
+            <th id="antwerp">Antwerp</th>
+            <td headers="belgium antwerp clothes trousers">56</td>
+            <td headers="belgium antwerp clothes skirts">22</td>
+            <td headers="belgium antwerp clothes dresses">43</td>
+            <td headers="belgium antwerp accessories bracelets">72</td>
+            <td headers="belgium antwerp accessories rings">23</td>
           </tr>
 
           <tr>
-            <th>Ghent</th>
-            <td>46</td>
-            <td>18</td>
-            <td>50</td>
-            <td>61</td>
-            <td>15</td>
+            <th id="ghent" headers="">Ghent</th>
+            <td headers="belgium ghent clothes trousers">46</td>
+            <td headers="belgium ghent clothes skirts">18</td>
+            <td headers="belgium ghent clothes dresses">50</td>
+            <td headers="belgium ghent accessories bracelets">61</td>
+            <td headers="belgium ghent clothes rings">15</td>
           </tr>
 
           <tr>
-            <th>Brussels</th>
-            <td>51</td>
-            <td>27</td>
-            <td>38</td>
-            <td>69</td>
-            <td>28</td>
+            <th id="brussels" headers="">Brussels</th>
+            <td headers="belgium brussels clothes trousers">51</td>
+            <td headers="belgium brussels clothes skirts">27</td>
+            <td headers="belgium brussels clothes dresses">38</td>
+            <td headers="belgium brussels accessories bracelets">69</td>
+            <td headers="belgium brussels clothes rings">28</td>
           </tr>
 
           <tr>
-            <th rowspan="2">The Netherlands</th>
-            <th>Amsterdam</th>
-            <td>89</td>
-            <td>34</td>
-            <td>69</td>
-            <td>85</td>
-            <td>38</td>
+            <th id="netherlands" headers="" rowspan="2">The Netherlands</th>
+            <th id="amsterdam" headers="">Amsterdam</th>
+            <td headers="netherlands amsterdam clothes trousers">89</td>
+            <td headers="netherlands amsterdam clothes skirts">34</td>
+            <td headers="netherlands amsterdam clothes dresses">69</td>
+            <td headers="netherlands amsterdam accessories bracelets">85</td>
+            <td headers="netherlands amsterdam clothes rings">38</td>
           </tr>
 
           <tr>
-            <th>Utrecht</th>
-            <td>80</td>
-            <td>12</td>
-            <td>43</td>
-            <td>36</td>
-            <td>19</td>
+            <th id="utrecht" headers="">Utrecht</th>
+            <td headers="netherlands utrecht clothes trousers">80</td>
+            <td headers="netherlands utrecht clothes skirts">12</td>
+            <td headers="netherlands utrecht clothes dresses">43</td>
+            <td headers="netherlands utrecht accessories bracelets">36</td>
+            <td headers="netherlands utrecht clothes rings">19</td>
           </tr>
         </tbody>
       </table>
