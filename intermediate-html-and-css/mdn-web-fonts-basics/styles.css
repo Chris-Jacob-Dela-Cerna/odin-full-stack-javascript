@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Simple Handmade';
+    src: url('fonts/SimpleHandmadeRegular.woff2') format('woff2'),
+         url('fonts/SimpleHandmadeRegular.woff')  format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Papernotes';
+    src: url('fonts/PapernotesRegular.woff2') format('woff2'),
+         url('fonts/PapernotesRegular.woff')  format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* General setup */
 
 html {
