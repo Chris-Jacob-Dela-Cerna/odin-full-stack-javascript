@@ -2,4 +2,11 @@ body {
   font: 1.2em / 1.5 sans-serif;
 }
 
-/* Add styles here */
+h2 + p {
+  color: red;
+}
+
+.container > ul > li {
+  border-bottom: 1px solid grey;
+  list-style: none;
+}
