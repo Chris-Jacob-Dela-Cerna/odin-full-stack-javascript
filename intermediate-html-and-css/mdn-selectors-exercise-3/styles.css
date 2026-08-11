@@ -16,4 +16,22 @@ th {
   text-align: left;
 }
 
-/* Add styles here */
+a:visited {
+  color: green;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container > :first-child {
+  font-size: 150%;
+  &::first-line {
+    color: red;
+  }
+}
+
+tbody > tr:nth-child(2n) {
+  background-color: #333333;
+  color: white;
+}
