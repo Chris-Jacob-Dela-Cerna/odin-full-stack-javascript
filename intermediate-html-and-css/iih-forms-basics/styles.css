@@ -16,6 +16,8 @@ body {
   align-items: center;
 }
 
+
+
 .speaker-form-header {
   text-align: center;
   background-color: #F6F7F8;
@@ -32,12 +34,61 @@ body {
   margin-bottom: 20px;
 }
 
+
+
 .speaker-form {
   background-color: #F6F7F8;
   border: 1px solid #D6D9DC;
   border-radius: 3px;
-  
+
   width: 80%;
   padding: 50px;
   margin: 0 0 40px 0;
+}
+
+
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row label {
+  margin-bottom: 15px;
+}
+
+.form-row input[type='text'] {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+
+
+@media only screen and (min-width: 700px) {
+  .speaker-form-header,
+  .speaker-form {
+    width: 600px;
+  }
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start; /* To avoid stretching */
+    margin-bottom: 20px;
+  }
+  .form-row input[type='text'] {
+    width: 250px;
+    height: initial;
+  }
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
 }
