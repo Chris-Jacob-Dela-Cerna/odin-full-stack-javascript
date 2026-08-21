@@ -70,6 +70,13 @@ body {
   font-size: 14px;
 }
 
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none; /* Remove default red glow in Firefox */
+}
+
 
 
 @media only screen and (min-width: 700px) {
@@ -82,7 +89,10 @@ body {
     align-items: flex-start; /* To avoid stretching */
     margin-bottom: 20px;
   }
-  .form-row input[type='text'] {
+  .form-row input[type='text'],
+  .form-row input[type='email'],
+  .form-row select,
+  .form-row textarea {
     width: 250px;
     height: initial;
   }
