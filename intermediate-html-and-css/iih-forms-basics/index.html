@@ -18,19 +18,44 @@
 
     <form action='' method='get' class='speaker-form'>
       <div class='form-row'>
-        <label for='full-name'>Name</label>
+        <label for='full-name'>
+          Name
+        </label>
         <input id='full-name' 
                type='text' 
                name='full-name'/>
       </div>
 
       <div class='form-row'>
-        <label for='email'>Email</label>
+        <label for='email'>
+          Email
+        </label>
         <input id='email'
                type='email'
                name='email'
                placeholder='joe@example.com'/>
       </div>
+
+    <fieldset class='legacy-form-row'>
+      <legend>Type of Talk</legend>
+
+      <input id='talk-type-1'
+             name='talk-type'
+             type='radio'
+             value='main-stage' />
+      <label for='talk-type-1' class='radio-label'>
+        Main Stage
+      </label>
+
+      <input id='talk-type-2'
+             name='talk-type'
+             type='radio'
+             value='workshop'
+             checked />
+      <label for='talk-type-2' class='radio-label'>
+        Workshop
+      </label>
+    </fieldset>
     </form>
   </body>
 </html>
