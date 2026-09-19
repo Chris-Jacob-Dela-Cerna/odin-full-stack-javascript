@@ -4,10 +4,10 @@ function Book(title=null, author=undefined, pages=0, read=false) {
   if (!new.target) {
     throw Error("Please declare the object with new.");
   }
-  title;
-  author;
-  pages;
-  read;
+  this.title = title,
+  this.author = author,
+  this.pages = pages,
+  this.read = read
 }
 
 const bookNull = new Book();
