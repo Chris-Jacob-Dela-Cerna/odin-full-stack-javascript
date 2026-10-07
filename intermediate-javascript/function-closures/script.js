@@ -1,16 +1,23 @@
 
 
 
-function initialize(prefix, suffix) {
-  return function concat(word) {
-    return prefix + word + suffix;
+function a() {
+  let cats = 5;
+}
+
+function b() {
+  console.log("There are " + cats + "."); 
+}
+
+b()  // Error because cats isn't founc in the global scope
+
+function c() {
+  let cats = 5;
+  return function() {
+    console.log("There are " + cats + "."); 
   }
 }
 
-const mis_ing = initialize("mis", "ing");
 
-console.log(mis_ing("understand"));
-console.log(mis_ing("direct"));
-console.log(mis_ing("lead"));
-console.log(mis_ing("represent"));
-console.log(mis_ing("trust"));
+const getCats = c()
+getCats();  // This works
